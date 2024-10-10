@@ -10,12 +10,11 @@ with open('archivo.csv', 'w', newline='') as file:
     writer.writeheader()
     #escribir un afila con los datos 
     #cada diccionario debe tener claves que coincidan  con los nombres de las columnas
-writer.writerow(
-    {"nombre": "ana", "edad": "35", "ciudad": "caracas"})
+writer.writerows({"nombre": "ana", "edad": "35", "ciudad": "caracas"})
      
      #escribir multiples filas de datos en el archivo
      
-writer.writerow([
+writer.writerows([
     {"nombre":"ana", "edad":"35", "ciudad": "caracas"},{"nombre":"Camila", "edad":"36", "ciudad": "caracas"}
     ])
     
